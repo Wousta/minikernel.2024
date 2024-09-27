@@ -1,0 +1,80 @@
+cmake_minimum_required(VERSION 3.28)
+project(minikernel_2024 C)
+
+set(CMAKE_C_STANDARD 11)
+
+include_directories(HAL)
+include_directories(kernel/include)
+include_directories(user/include)
+
+add_executable(minikernel_2024
+        HAL/HAL.h
+        kernel/include/bitmask.h
+        kernel/include/clock.h
+        kernel/include/common.h
+        kernel/include/exception.h
+        kernel/include/fifo.h
+        kernel/include/HAL.h
+        kernel/include/interrupt.h
+        kernel/include/list.h
+        kernel/include/mutex.h
+        kernel/include/process.h
+        kernel/include/sched.h
+        kernel/include/strings.h
+        kernel/include/syscall.h
+        kernel/include/syscall_nr.h
+        kernel/include/terminal.h
+        kernel/bitmask.c
+        kernel/clock.c
+        kernel/exception.c
+        kernel/fifo.c
+        kernel/interrupt.c
+        kernel/list.c
+        kernel/main.c
+        kernel/mutex.c
+        kernel/process.c
+        kernel/sched.c
+        kernel/strings.c
+        kernel/syscall.c
+        kernel/terminal.c
+        user/include/services.h
+        user/lib/services.c
+        user/creador_mut1.c
+        user/creador_mut2.c
+        user/creador_mut3.c
+        user/creador_mut4.c
+        user/creador_mut_error.c
+        user/dormilon.c
+        user/init_00.c
+        user/init_01.c
+        user/init_02.c
+        user/init_03.c
+        user/init_04.c
+        user/init_05.c
+        user/init_06.c
+        user/init_07.c
+        user/init_08.c
+        user/init_09.c
+        user/init_10.c
+        user/init_11.c
+        user/init_12.c
+        user/init_13.c
+        user/init_14.c
+        user/init_15.c
+        user/init_16.c
+        user/init_17.c
+        user/init_18.c
+        user/init_19.c
+        user/init_20.c
+        user/lanza.c
+        user/lector.c
+        user/lector2.c
+        user/locker1.c
+        user/locker1_int.c
+        user/locker2.c
+        user/locker2_int.c
+        user/locker3.c
+        user/mudo.c
+        user/simplon.c
+        user/yosoy.c
+        user/yosoy_largo.c)

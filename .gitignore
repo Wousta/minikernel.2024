@@ -1,0 +1,48 @@
+# Ignore object files, shared libraries, and executables
+*.o
+*.so
+*.a
+*.out
+*.exe
+
+# Ignore dependency files
+*.d
+
+# Ignore compiled dynamic libraries
+*.dll
+*.dylib
+
+# Ignore CLion specific files
+.idea/
+cmake-build-debug/
+cmake-build-release/
+CMakeLists.txt.user
+
+# Ignore build directories
+build/
+bin/
+obj/
+
+# Ignore logs and temporary files
+*.log
+*.tmp
+*.swp
+*.swo
+
+# Ignore core dumps
+core
+
+# Ignore generated documentation
+docs/
+
+# Ignore backup files
+*~
+*.bak
+
+# Ignore other IDE specific files
+.vscode/
+*.code-workspace
+
+# Ignore system files
+.DS_Store
+Thumbs.db

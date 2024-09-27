@@ -1,0 +1,279 @@
+-> ARRANQUE DEL KERNEL
+Modulo mutex inicializado
+-> CREA Y ACTIVA EL PROCESO INICIAL
+-> NUEVO PROCESO 0
+init comienza
+Creado mutex m1 | mutexes: 1 | mutpos: 0
+Creado mutex m2 | mutexes: 2 | mutpos: 1
+Proceso 0 toma posesion del mutex mutid:0 name:m1
+-> NUEVO PROCESO 1
+-> CAMBIO DE CONTEXTO DE 0 A 1
+locker1_int comienza
+mutex m2 existe, añade desc | mutexes: 2 | mutpos: 1
+Creado mutex m3 | mutexes: 3 | mutpos: 2
+Proceso 1 toma posesion del mutex mutid:0 name:m2
+-> NUEVO PROCESO 2
+-> CAMBIO DE CONTEXTO DE 1 A 2
+locker2_int comienza
+mutex m1 existe, añade desc | mutexes: 3 | mutpos: 0
+mutex m3 existe, añade desc | mutexes: 3 | mutpos: 2
+Proceso 2 toma posesion del mutex mutid:1 name:m3
+Proceso 2 check deadlock en mutex m1
+********* Propietario del mutex m1 no encontrado en listas de bloqueados
+Bloqueado proceso 2 esperando a mutex m1
+-> CAMBIO DE CONTEXTO DE 2 A 1
+Proceso 1 check deadlock en mutex m3
+- - - -Proceso bloqueado 2 propietario del mutex m3
+-------------- Proceso 2 esperando a otro mutex m1
+********* Propietario del mutex m1 no encontrado en listas de bloqueados
+Bloqueado proceso 1 esperando a mutex m3
+-> CAMBIO DE CONTEXTO DE 1 A 0
+Proceso 0 check deadlock en mutex m2
+- - - -Proceso bloqueado 1 propietario del mutex m2
+-------------- Proceso 1 esperando a otro mutex m3
+- - - -Proceso bloqueado 2 propietario del mutex m3
+-------------- Proceso 1 esperando a otro mutex m3
+- - - -Proceso bloqueado 2 propietario del mutex m3
+-------------- Proceso 1 esperando a otro mutex m3
+- - - -Proceso bloqueado 2 propietario del mutex m3
+-------------- Proceso 1 esperando a otro mutex m3
+- - - -Proceso bloqueado 2 propietario del mutex m3
+-------------- Proceso 1 esperando a otro mutex m3
+- - - -Proceso bloqueado 2 propietario del mutex m3
+-------------- Proceso 1 esperando a otro mutex m3
+- - - -Proceso bloqueado 2 propietario del mutex m3
+-------------- Proceso 1 esperando a otro mutex m3
+- - - -Proceso bloqueado 2 propietario del mutex m3
+-------------- Proceso 1 esperando a otro mutex m3
+- - - -Proceso bloqueado 2 propietario del mutex m3
+-------------- Proceso 1 esperando a otro mutex m3
+- - - -Proceso bloqueado 2 propietario del mutex m3
+-------------- Proceso 1 esperando a otro mutex m3
+- - - -Proceso bloqueado 2 propietario del mutex m3
+-------------- Proceso 1 esperando a otro mutex m3
+- - - -Proceso bloqueado 2 propietario del mutex m3
+-------------- Proceso 1 esperando a otro mutex m3
+- - - -Proceso bloqueado 2 propietario del mutex m3
+-------------- Proceso 1 esperando a otro mutex m3
+- - - -Proceso bloqueado 2 propietario del mutex m3
+-------------- Proceso 1 esperando a otro mutex m3
+- - - -Proceso bloqueado 2 propietario del mutex m3
+-------------- Proceso 1 esperando a otro mutex m3
+- - - -Proceso bloqueado 2 propietario del mutex m3
+-------------- Proceso 1 esperando a otro mutex m3
+- - - -Proceso bloqueado 2 propietario del mutex m3
+-------------- Proceso 1 esperando a otro mutex m3
+- - - -Proceso bloqueado 2 propietario del mutex m3
+-------------- Proceso 1 esperando a otro mutex m3
+- - - -Proceso bloqueado 2 propietario del mutex m3
+-------------- Proceso 1 esperando a otro mutex m3
+- - - -Proceso bloqueado 2 propietario del mutex m3
+-------------- Proceso 1 esperando a otro mutex m3
+- - - -Proceso bloqueado 2 propietario del mutex m3
+-------------- Proceso 1 esperando a otro mutex m3
+- - - -Proceso bloqueado 2 propietario del mutex m3
+-------------- Proceso 1 esperando a otro mutex m3
+- - - -Proceso bloqueado 2 propietario del mutex m3
+-------------- Proceso 1 esperando a otro mutex m3
+- - - -Proceso bloqueado 2 propietario del mutex m3
+-------------- Proceso 1 esperando a otro mutex m3
+- - - -Proceso bloqueado 2 propietario del mutex m3
+-------------- Proceso 1 esperando a otro mutex m3
+- - - -Proceso bloqueado 2 propietario del mutex m3
+-------------- Proceso 1 esperando a otro mutex m3
+- - - -Proceso bloqueado 2 propietario del mutex m3
+-------------- Proceso 1 esperando a otro mutex m3
+- - - -Proceso bloqueado 2 propietario del mutex m3
+-------------- Proceso 1 esperando a otro mutex m3
+- - - -Proceso bloqueado 2 propietario del mutex m3
+-------------- Proceso 1 esperando a otro mutex m3
+- - - -Proceso bloqueado 2 propietario del mutex m3
+-------------- Proceso 1 esperando a otro mutex m3
+- - - -Proceso bloqueado 2 propietario del mutex m3
+-------------- Proceso 1 esperando a otro mutex m3
+- - - -Proceso bloqueado 2 propietario del mutex m3
+-------------- Proceso 1 esperando a otro mutex m3
+- - - -Proceso bloqueado 2 propietario del mutex m3
+-------------- Proceso 1 esperando a otro mutex m3
+- - - -Proceso bloqueado 2 propietario del mutex m3
+-------------- Proceso 1 esperando a otro mutex m3
+- - - -Proceso bloqueado 2 propietario del mutex m3
+-------------- Proceso 1 esperando a otro mutex m3
+- - - -Proceso bloqueado 2 propietario del mutex m3
+-------------- Proceso 1 esperando a otro mutex m3
+- - - -Proceso bloqueado 2 propietario del mutex m3
+-------------- Proceso 1 esperando a otro mutex m3
+- - - -Proceso bloqueado 2 propietario del mutex m3
+-------------- Proceso 1 esperando a otro mutex m3
+- - - -Proceso bloqueado 2 propietario del mutex m3
+-------------- Proceso 1 esperando a otro mutex m3
+- - - -Proceso bloqueado 2 propietario del mutex m3
+-------------- Proceso 1 esperando a otro mutex m3
+- - - -Proceso bloqueado 2 propietario del mutex m3
+-------------- Proceso 1 esperando a otro mutex m3
+- - - -Proceso bloqueado 2 propietario del mutex m3
+-------------- Proceso 1 esperando a otro mutex m3
+- - - -Proceso bloqueado 2 propietario del mutex m3
+-------------- Proceso 1 esperando a otro mutex m3
+- - - -Proceso bloqueado 2 propietario del mutex m3
+-------------- Proceso 1 esperando a otro mutex m3
+- - - -Proceso bloqueado 2 propietario del mutex m3
+-------------- Proceso 1 esperando a otro mutex m3
+- - - -Proceso bloqueado 2 propietario del mutex m3
+-------------- Proceso 1 esperando a otro mutex m3
+- - - -Proceso bloqueado 2 propietario del mutex m3
+-------------- Proceso 1 esperando a otro mutex m3
+- - - -Proceso bloqueado 2 propietario del mutex m3
+-------------- Proceso 1 esperando a otro mutex m3
+- - - -Proceso bloqueado 2 propietario del mutex m3
+-------------- Proceso 1 esperando a otro mutex m3
+- - - -Proceso bloqueado 2 propietario del mutex m3
+-------------- Proceso 1 esperando a otro mutex m3
+- - - -Proceso bloqueado 2 propietario del mutex m3
+-------------- Proceso 1 esperando a otro mutex m3
+- - - -Proceso bloqueado 2 propietario del mutex m3
+-------------- Proceso 1 esperando a otro mutex m3
+- - - -Proceso bloqueado 2 propietario del mutex m3
+-------------- Proceso 1 esperando a otro mutex m3
+- - - -Proceso bloqueado 2 propietario del mutex m3
+-------------- Proceso 1 esperando a otro mutex m3
+- - - -Proceso bloqueado 2 propietario del mutex m3
+-------------- Proceso 1 esperando a otro mutex m3
+- - - -Proceso bloqueado 2 propietario del mutex m3
+-------------- Proceso 1 esperando a otro mutex m3
+- - - -Proceso bloqueado 2 propietario del mutex m3
+-------------- Proceso 1 esperando a otro mutex m3
+- - - -Proceso bloqueado 2 propietario del mutex m3
+-------------- Proceso 1 esperando a otro mutex m3
+- - - -Proceso bloqueado 2 propietario del mutex m3
+-------------- Proceso 1 esperando a otro mutex m3
+- - - -Proceso bloqueado 2 propietario del mutex m3
+-------------- Proceso 1 esperando a otro mutex m3
+- - - -Proceso bloqueado 2 propietario del mutex m3
+-------------- Proceso 1 esperando a otro mutex m3
+- - - -Proceso bloqueado 2 propietario del mutex m3
+-------------- Proceso 1 esperando a otro mutex m3
+- - - -Proceso bloqueado 2 propietario del mutex m3
+-------------- Proceso 1 esperando a otro mutex m3
+- - - -Proceso bloqueado 2 propietario del mutex m3
+-------------- Proceso 1 esperando a otro mutex m3
+- - - -Proceso bloqueado 2 propietario del mutex m3
+-------------- Proceso 1 esperando a otro mutex m3
+- - - -Proceso bloqueado 2 propietario del mutex m3
+-------------- Proceso 1 esperando a otro mutex m3
+- - - -Proceso bloqueado 2 propietario del mutex m3
+-------------- Proceso 1 esperando a otro mutex m3
+- - - -Proceso bloqueado 2 propietario del mutex m3
+-------------- Proceso 1 esperando a otro mutex m3
+- - - -Proceso bloqueado 2 propietario del mutex m3
+-------------- Proceso 1 esperando a otro mutex m3
+- - - -Proceso bloqueado 2 propietario del mutex m3
+-------------- Proceso 1 esperando a otro mutex m3
+- - - -Proceso bloqueado 2 propietario del mutex m3
+-------------- Proceso 1 esperando a otro mutex m3
+- - - -Proceso bloqueado 2 propietario del mutex m3
+-------------- Proceso 1 esperando a otro mutex m3
+- - - -Proceso bloqueado 2 propietario del mutex m3
+-------------- Proceso 1 esperando a otro mutex m3
+- - - -Proceso bloqueado 2 propietario del mutex m3
+-------------- Proceso 1 esperando a otro mutex m3
+- - - -Proceso bloqueado 2 propietario del mutex m3
+-------------- Proceso 1 esperando a otro mutex m3
+- - - -Proceso bloqueado 2 propietario del mutex m3
+-------------- Proceso 1 esperando a otro mutex m3
+- - - -Proceso bloqueado 2 propietario del mutex m3
+-------------- Proceso 1 esperando a otro mutex m3
+- - - -Proceso bloqueado 2 propietario del mutex m3
+-------------- Proceso 1 esperando a otro mutex m3
+- - - -Proceso bloqueado 2 propietario del mutex m3
+-------------- Proceso 1 esperando a otro mutex m3
+- - - -Proceso bloqueado 2 propietario del mutex m3
+-------------- Proceso 1 esperando a otro mutex m3
+- - - -Proceso bloqueado 2 propietario del mutex m3
+-------------- Proceso 1 esperando a otro mutex m3
+- - - -Proceso bloqueado 2 propietario del mutex m3
+-------------- Proceso 1 esperando a otro mutex m3
+- - - -Proceso bloqueado 2 propietario del mutex m3
+-------------- Proceso 1 esperando a otro mutex m3
+- - - -Proceso bloqueado 2 propietario del mutex m3
+-------------- Proceso 1 esperando a otro mutex m3
+- - - -Proceso bloqueado 2 propietario del mutex m3
+-------------- Proceso 1 esperando a otro mutex m3
+- - - -Proceso bloqueado 2 propietario del mutex m3
+-------------- Proceso 1 esperando a otro mutex m3
+- - - -Proceso bloqueado 2 propietario del mutex m3
+-------------- Proceso 1 esperando a otro mutex m3
+- - - -Proceso bloqueado 2 propietario del mutex m3
+-------------- Proceso 1 esperando a otro mutex m3
+- - - -Proceso bloqueado 2 propietario del mutex m3
+-------------- Proceso 1 esperando a otro mutex m3
+- - - -Proceso bloqueado 2 propietario del mutex m3
+-------------- Proceso 1 esperando a otro mutex m3
+- - - -Proceso bloqueado 2 propietario del mutex m3
+-------------- Proceso 1 esperando a otro mutex m3
+- - - -Proceso bloqueado 2 propietario del mutex m3
+-------------- Proceso 1 esperando a otro mutex m3
+- - - -Proceso bloqueado 2 propietario del mutex m3
+-------------- Proceso 1 esperando a otro mutex m3
+- - - -Proceso bloqueado 2 propietario del mutex m3
+-------------- Proceso 1 esperando a otro mutex m3
+- - - -Proceso bloqueado 2 propietario del mutex m3
+-------------- Proceso 1 esperando a otro mutex m3
+- - - -Proceso bloqueado 2 propietario del mutex m3
+-------------- Proceso 1 esperando a otro mutex m3
+- - - -Proceso bloqueado 2 propietario del mutex m3
+-------------- Proceso 1 esperando a otro mutex m3
+- - - -Proceso bloqueado 2 propietario del mutex m3
+-------------- Proceso 1 esperando a otro mutex m3
+- - - -Proceso bloqueado 2 propietario del mutex m3
+-------------- Proceso 1 esperando a otro mutex m3
+- - - -Proceso bloqueado 2 propietario del mutex m3
+-------------- Proceso 1 esperando a otro mutex m3
+- - - -Proceso bloqueado 2 propietario del mutex m3
+-------------- Proceso 1 esperando a otro mutex m3
+- - - -Proceso bloqueado 2 propietario del mutex m3
+-------------- Proceso 1 esperando a otro mutex m3
+- - - -Proceso bloqueado 2 propietario del mutex m3
+-------------- Proceso 1 esperando a otro mutex m3
+- - - -Proceso bloqueado 2 propietario del mutex m3
+-------------- Proceso 1 esperando a otro mutex m3
+- - - -Proceso bloqueado 2 propietario del mutex m3
+-------------- Proceso 1 esperando a otro mutex m3
+- - - -Proceso bloqueado 2 propietario del mutex m3
+-------------- Proceso 1 esperando a otro mutex m3
+- - - -Proceso bloqueado 2 propietario del mutex m3
+-------------- Proceso 1 esperando a otro mutex m3
+- - - -Proceso bloqueado 2 propietario del mutex m3
+-------------- Proceso 1 esperando a otro mutex m3
+- - - -Proceso bloqueado 2 propietario del mutex m3
+-------------- Proceso 1 esperando a otro mutex m3
+- - - -Proceso bloqueado 2 propietario del mutex m3
+-------------- Proceso 1 esperando a otro mutex m3
+- - - -Proceso bloqueado 2 propietario del mutex m3
+-------------- Proceso 1 esperando a otro mutex m3
+- - - -Proceso bloqueado 2 propietario del mutex m3
+-------------- Proceso 1 esperando a otro mutex m3
+- - - -Proceso bloqueado 2 propietario del mutex m3
+-------------- Proceso 1 esperando a otro mutex m3
+- - - -Proceso bloqueado 2 propietario del mutex m3
+-------------- Proceso 1 esperando a otro mutex m3
+- - - -Proceso bloqueado 2 propietario del mutex m3
+-------------- Proceso 1 esperando a otro mutex m3
+- - - -Proceso bloqueado 2 propietario del mutex m3
+-------------- Proceso 1 esperando a otro mutex m3
+- - - -Proceso bloqueado 2 propietario del mutex m3
+-------------- Proceso 1 esperando a otro mutex m3
+- - - -Proceso bloqueado 2 propietario del mutex m3
+-------------- Proceso 1 esperando a otro mutex m3
+- - - -Proceso bloqueado 2 propietario del mutex m3
+-------------- Proceso 1 esperando a otro mutex m3
+- - - -Proceso bloqueado 2 propietario del mutex m3
+-------------- Proceso 1 esperando a otro mutex m3
+- - - -Proceso bloqueado 2 propietario del mutex m3
+-------------- Proceso 1 esperando a otro mutex m3
+- - - -Proceso bloqueado 2 propietario del mutex m3
+-------------- Proceso 1 esperando a otro mutex m3
+- - - -Proceso bloqueado 2 propietario del mutex m3
+-------------- Proceso 1 esperando a otro mutex m3
+- - - -Proceso bloqueado 2 propietario del mutex m3
+-------------- Proceso 1 esperando a otro mutex m3
